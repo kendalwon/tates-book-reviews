@@ -11,13 +11,13 @@ body {
 
 .quote_container {
   position: absolute;
-  left: 50%;
+  left: 52%;
   width: 40%;
+  font-size: 18px;
+  letter-spacing: .1em;
 }
 
 .quote, .author {
-  font-size: 18px;
-  letter-spacing: .1em;
   margin: 20px 0 0 0;
 }
 
@@ -74,4 +74,96 @@ body {
   height: 500px;
   border: 1px solid gray;
   border-bottom: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .quote_container {
+    left: 60%;
+    width: 35%;
+  }
+  .author {
+    padding: 0 0 0 180px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .header {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .quote_container {
+    left: 65%;
+    width: 25%;
+    font-size: 14px;
+  }
+  .author {
+    padding: 0 0 0 120px;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .page_title {
+    font-size: 26px;
+  }
+  .quote_container {
+    top: 500px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+  .author {
+    padding: 0;
+  }
+  .header {
+    height: 400px;
+    padding-left: 10px;
+  }
+  .spine_img {
+    height: 400px;
+  }
+  .front_container, .back_container {
+    top: 140px;
+    height: 250px;
+  }
+  .back_container {
+    width: 200px;
+  }
+  .bike_front, .bike_back {
+    height: 230px;
+  }
+  .wheel {
+    height: 130px;
+    top: -115px;
+    left: 55px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 300px;
+  }
+  .quote_container {
+    top: 400px;
+  }
+  .spine_img {
+    height: 300px;
+  }
+  .front_container, .back_container {
+    top: 110px;
+    height: 180px;
+  }
+  .back_container {
+    width: 150px;
+  }
+  .bike_front, .bike_back {
+    height: 160px;
+  }
+  .wheel {
+    height: 95px;
+    top: -79px;
+    left: 35px;
+  }
 }

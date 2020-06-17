@@ -1,0 +1,77 @@
+body {
+  background-color: #eee;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page_title {
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: .2em;
+}
+
+.quote_container {
+  position: absolute;
+  left: 50%;
+  width: 40%;
+}
+
+.quote, .author {
+  font-size: 18px;
+  letter-spacing: .1em;
+  margin: 20px 0 0 0;
+}
+
+.author {
+  padding: 10px 0 0 280px;
+}
+
+.header {
+  display: flex;
+  height: 500px;
+  padding-left: 100px;
+  border-bottom: 10px solid #aaa;
+}
+
+.front_container, .back_container {
+  position: relative;
+  top: 170px;
+  height: 320px;
+  border-bottom: 10px solid #ccc;
+}
+
+.front_container {
+  border-right: 10px solid #ccc;
+}
+
+.back_container {
+  width: 260px;
+  transition: ease;
+  border-left: 10px solid #ccc;
+}
+
+.bike_front, .bike_back {
+  position: relative;
+  top: 20px;
+  height: 300px;
+  z-index: 5;
+}
+
+.wheel {
+  position: relative;
+  height: 175px;
+  top: -160px;
+  left: 65px;
+  transition: ease;
+  z-index: 1;
+}
+
+.spines {
+  display: flex;
+  justify-content: center;
+}
+
+.spine_img {
+  height: 500px;
+  border: 1px solid gray;
+  border-bottom: none;
+}

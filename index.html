@@ -3,38 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" type="image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Tate's Book Reviews</title>
 </head>
 <body>
-  <h1 class="page_title">
-    Tate's Book Reviews
-  </h1>
-  <div class="quote_container">
-    <p class="quote">And above all, watch with glittering eyes the whole world around you because the greatest secrets are always hidden in the mist unlikely places. Those who don't believe in magic will never find it.</p>
-    <p class="author">-Roald Dahl</p>
+  <div class="main">
+    <h1 class="page_title">
+      Tate's Book Reviews
+    </h1>
+    <div class="quote_container">
+      <p class="quote">And above all, watch with glittering eyes the whole world around you because the greatest secrets are always hidden in the mist unlikely places. Those who don't believe in magic will never find it.</p>
+      <p class="citation">-Roald Dahl</p>
+    </div>
+    <div class="header">
+      <div class="front_container">
+        <img class="bike_front" src="images/bike-front.png">
+      </div>
+      <div class="spines">
+        <div class="spine">
+          <img id="bfg" class="spine_img" src="images/spines/bfg_spine.jpg">
+        </div>
+        <div class="spine">
+          <img id="charlie" class="spine_img" src="images/spines/charlie_spine.jpg">
+        </div>
+        <div class="spine">
+          <img id="danny" class="spine_img" src="images/spines/danny_spine.jpg">
+        </div>
+        <div class="spine">
+          <img id="fantastic" class="spine_img" src="images/spines/fantastic_spine.jpg">
+        </div>
+        <div class="spine">
+          <img id="james" class="spine_img" src="images/spines/james_spine.jpg">
+        </div>
+        <div class="spine">
+          <img class="spine_img" src="images/spines/matilda_spine.jpg">
+        </div>
+        <div id="matilda" id="twits" class="spine">
+          <img class="spine_img" src="images/spines/twits_spine.jpg">
+        </div>
+        <div class="spine">
+          <img id="witches" class="spine_img" src="images/spines/witches_spine.jpg">
+        </div>
+      </div>
+      <div id="back_container" class="back_container" style="left: 200px">
+        <img class="bike_back" src="images/bike-back.png">
+        <img id="wheel" class="wheel" src="images/wheel.png">
+      </div>
+    </div>
   </div>
-  <div class="header">
-    <div class="front_container">
-      <img class="bike_front" src="images/bike-front.png">
+  <div id="review_container" class="review_container hide_review">
+    <div id="close" class="close">x</div>
+    <h1 id="title" class="title"></h1>
+    <h2 id="author" class="author"></h2>
+    <div class="review_main">
+      <div class="review_body">
+        <div id="stars" class="stars">
+          <i class="star fa fa-star-o" style="color: #ddd"></i>
+          <i class="star fa fa-star-o" style="color: #ddd"></i>
+          <i class="star fa fa-star-o" style="color: #ddd"></i>
+          <i class="star fa fa-star-o" style="color: #ddd"></i>
+          <i class="star fa fa-star-o" style="color: #ddd"></i>
+        </div>
+        <h2 class="review_intro">Tate says...</h2>
+        <p id="review" class="review"></p>
+      </div>
+      <div id="cover" class="cover"></div>
     </div>
-    <div class="spines">
-      <img id="bfg" class="spine_img" src="images/bfg.jpg">
-      <img id="charlie" class="spine_img" src="images/charlie.jpg">
-      <img id="danny" class="spine_img" src="images/danny.jpg">
-      <img id="fanastic" class="spine_img" src="images/fantastic.jpg">
-      <img id="james" class="spine_img" src="images/james.jpg">
-      <img id="matilda" class="spine_img" src="images/matilda.jpg">
-      <img id="twits" class="spine_img" src="images/twits.jpg">
-      <img id="witches" class="spine_img" src="images/witches.jpg">
-    </div>
-    <div id="back_container" class="back_container" style="left: 200px">
-      <img class="bike_back" src="images/bike-back.png">
-      <img id="wheel" class="wheel" src="images/wheel.png">
-    </div>
-    
   </div>
-
 <script src="js/bike_animation.js"></script>
+<script type="module" src="js/review.js"></script>
 </body>
 </html>

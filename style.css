@@ -263,3 +263,52 @@ body {
     left: 35px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .page_title {
+    font-size: 24px;
+    letter-spacing: .2em;
+    margin: 30px 20px;
+  }
+  .header {
+    height: 250px;
+  }
+  .quote_container {
+    top: 350px;
+  }
+  .spine {
+    height: 250px;
+  }
+  .front_container, .back_container {
+    top: 110px;
+    height: 130px;
+  }
+  .back_container {
+    width: 90px;
+  }
+  .bike_front, .bike_back {
+    height: 100px;
+    top: 30px;
+  }
+  .wheel {
+    height: 55px;
+    top: -29px;
+    left: 25px;
+  }
+  .review_main {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .title {
+    font-size: 20px;
+    margin: 50px 30px 10px 30px;
+  }
+  .author {
+    font-size: 14px;
+  }
+  .review_body {
+    width: 80%;
+    margin-top: 10px;
+  }
+}

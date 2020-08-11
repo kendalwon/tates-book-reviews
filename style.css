@@ -307,8 +307,22 @@ body {
   .author {
     font-size: 14px;
   }
+  .stars {
+    background-color: white;
+    font-size: 18px;
+    margin: 10px;
+  }
+  .review_intro {
+    font-size: 18px;
+    margin: 0;
+  }
   .review_body {
     width: 80%;
+    height: 170px;
     margin-top: 10px;
+  }
+  .review {
+    font-size: 14px;
+    margin: 20px;
   }
 }

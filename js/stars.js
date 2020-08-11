@@ -1,7 +1,6 @@
 const stars = document.querySelectorAll(".star");
 
 const yellowStar = (i) => {
-  console.log("yellow " + i);
   const star = stars[i];
   star.classList.remove("fa-star-o");
   star.classList.add("fa-star");
@@ -9,7 +8,6 @@ const yellowStar = (i) => {
 }
 
 export const fillStars = (n) => {
-  console.log("filling stars");
   let index;
   while (n > 0) {
     index = n - 1;
